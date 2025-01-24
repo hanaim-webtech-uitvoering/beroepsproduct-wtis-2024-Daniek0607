@@ -122,7 +122,9 @@ INSERT INTO [User] (username, [password], first_name, last_name, [role]) VALUES
 ('ibrahimovic', 'wachtwoord', 'Ismail', 'Brahimovic', 'Client'), 
 ('snovak', 'wachtwoord', 'Sanja', 'Novak', 'Client'), 
 ('yabebe', 'wachtwoord', 'Yonas', 'Abebe', 'Personnel'), 
-('ngebre', 'wachtwoord', 'Nardos', 'Gebre', 'Personnel'); 
+('ngebre', 'wachtwoord', 'Nardos', 'Gebre', 'Personnel'),
+('personnel', 'test', 'Piet', 'Personeel', NULL, 'Personnel'),
+('client', 'test', 'Karel', 'Klant', 'Hoofdstraat 1, 1234AB, Amsterdam', 'Client');
 
 -- Insert statements for product types
 INSERT INTO ProductType ([name]) VALUES

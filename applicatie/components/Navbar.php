@@ -7,8 +7,10 @@
             <li><a href="index.php?pagina=WinkelmandjeView">Winkelmandje</a></li>
 
             <?php if (isset($_SESSION['ingelogd'])): ?>
-                <li><a href="index.php?pagina=ProfielView">Profiel</a></li>
-                
+                <?php if ($_SESSION['role'] !== 'Personnel'): ?>
+                    <li><a href="index.php?pagina=ProfielView">Profiel</a></li>
+                <?php endif; ?>
+
                 <?php if ($_SESSION['role'] === 'Personnel'): ?>
                     <li><a href="index.php?pagina=BestellingenView">Bestellingoverzicht</a></li>
                 <?php endif; ?>

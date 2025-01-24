@@ -1,0 +1,11 @@
+Setup instructie.
+
+INLOGGEGEVENS:
+
+Personeel account:
+-gebruikersnaam: personnel
+-wachtwoord: test
+
+Klant account:
+-gebruikersnaam: client
+-wachtwoord: test
