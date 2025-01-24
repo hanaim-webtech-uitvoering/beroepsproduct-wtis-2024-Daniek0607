@@ -22,9 +22,12 @@
         <label for="last_name">Achternaam:</label>
         <input type="text" id="last_name" name="last_name" required>
 
+        <label for="address">Adres:</label>
+        <input type="text" id="address" name="address" required>
+
         <label for="password">Wachtwoord:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">Registreren</button>
+        <button type="submit" name="register_button">Registreren</button>
     </form>
 </main>

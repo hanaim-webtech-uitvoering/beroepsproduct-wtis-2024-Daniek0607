@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 include 'db_connectie.php';
 
 
@@ -17,6 +19,7 @@ if (isset($_POST['login_button'])) {
         $_SESSION['ingelogd'] = true;
         $_SESSION['username'] = $result['username'];
         $_SESSION['role'] = $result['role'];
+        $_SESSION['address'] = $result['address'];
         
         header("Location: ../index.php?pagina=HomeView");
     } else {
